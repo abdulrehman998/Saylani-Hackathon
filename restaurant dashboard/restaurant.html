@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="restaurant.css">
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDoUNvulZ9HQkOjMV11e7FvOJojY2SF_v0",
+            authDomain: "practise-app-dcbe7.firebaseapp.com",
+            databaseURL: "https://practise-app-dcbe7-default-rtdb.firebaseio.com",
+            projectId: "practise-app-dcbe7",
+            storageBucket: "practise-app-dcbe7.appspot.com",
+            messagingSenderId: "730690708162",
+            appId: "1:730690708162:web:4aa8985103fea5d367515b"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body onload="showOrder()">
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="img"><img src="avatar.png" alt="" width="50%"></div>
+
+        </div>
+        <div class="main_content">
+            <div class="header">
+                <p class="para">Welcome To Serever-Side of Fooddddie</p>
+            </div>
+            <div class="info">
+                <div id="message"></div>
+                <div class="inputCard">
+                    <form class="row g-2" onsubmit="return false">
+                        <h4>Here Add new Dishes</h4>
+                        <div class="col-md-12">
+                            <label for="title" class="form-label">Dish Name</label>
+                            <input type="text" class="form-control" id="title" placeholder="Title" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="Price" class="form-label">Price</label>
+                            <input type="text" class="form-control" id="price" placeholder="Price" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Delivery Type</label>
+                            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                <option selected>Choose...</option>
+                                <option value="1">Free</option>
+                                <option value="2">Paid</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary col-md-12"
+                                onclick="insertButton()">Insert</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div>
+                    <div class="col-12">
+                        <div class="jumbotron card1">
+                            <h1 class="display-4">Orders</h1>
+                            <p class="lead">Here are All the Orders which have been placed by our Lovely clients</p>
+                            <hr class="my-4">
+                            <p>
+                            <ul id="list"></ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

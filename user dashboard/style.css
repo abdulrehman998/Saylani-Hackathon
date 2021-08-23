@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+body {
+    margin: 0;
+}
+
+.navv{
+    color: aliceblue;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 20px;
+}
+.section-intro {
+    height: 760px;
+    background-image: url(../img/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-intro h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.color{
+    color: black;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3c0;
+    padding: 50px 30px;
+}
+
+.about-section p,
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.carousel-inner {
+    height: 700px;
+}
+
+.section1 {
+    background-color:  #f3f3f3c0;
+    overflow: hidden;
+    color: black;
+    font-family:  'Big Shoulders Text', cursive;
+    font-size: 20px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    width: 50%;
+    margin: auto;
+}
+
+.section6 p {
+    font-size: 30px;
+}
+
+input[type=email] {
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+}
+
+input[type=button] {
+    background-color: #343a40;
+    color: white;
+    font-size: 16px;
+}
+
+.form-control {
+    border: 0;
+    border-radius: 2px;
+}
+
+.form-control::-moz-placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+    color: white;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: white;
+}
+
+#output {
+    font-size: 20px;
+}
+
+.footer .fa {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.section2 {
+    font-family:  'Big Shoulders Text', cursive;
+    background-color: #343a40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.footer {
+    width: 30%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.footer>img {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+}
+
+.footer p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer h5 {
+    font-size: 40px;
+}
+
+#copyright {
+    font-size: 18px;
+}
+

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+body {
+        margin: 0;
+}
+
+.navv{
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 20px;
+}
+.card{
+    margin-bottom: 20px;
+}
+
+.section-intro {
+    height: 760px;
+    background-image: url(../../img/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-intro h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.content{
+    text-align: center;
+    font-size: 28px;
+    font-family: Helvetica;
+    opacity: 0.85;
+}
+.hr{
+    border-top: 5px dotted #772b0d;
+    width: 100%;
+}
+
+.section1 {
+    background-color:  #f3f3f3c0;
+    overflow: hidden;
+    color: black;
+    font-family:  'Big Shoulders Text', cursive;
+    font-size: 20px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cardclass{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imgsize{
+    width: 20%;
+}
+
+.section2 {
+    font-family:  'Big Shoulders Text', cursive;
+    background-color: #343a40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.footer {
+    width: 30%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.footer>img {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+}
+
+.footer p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer h5 {
+    font-size: 40px;
+}
+
+#copyright {
+    font-size: 18px;
+}
+
+button{
+    background-color:#007bff;
+    color: white;
+    border: none;
+}
